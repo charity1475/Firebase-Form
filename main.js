@@ -25,7 +25,15 @@ function submitForm(e){
   var phone = getInputVal('phone');
   var message = getInputVal('message');
 
-  console.log(name);
+  /*calling a saveMessage function*/
+  saveMessage(name, company,email, phone,message);
+  /* showing alert to the user after sending the message*/
+  document.querySelector('.alert').style.display = 'block';
+  /*hiding alert after 3s*/
+  setTimeout( function(){
+    document.querySelector('.alert').style.display = 'none';
+  }, 3000);
+  document.getElementById('contactForm').reset();
 }
 
 /*Function to get form values*/

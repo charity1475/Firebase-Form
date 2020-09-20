@@ -8,6 +8,8 @@ function submitForm(e){
   var email = getInputVal('email');
   var phone = getInputVal('phone');
   var message = getInputVal('message');
+
+  console.log(name);
 }
 
 /*Function to get form values*/
